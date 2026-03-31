@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;0,9..40,900&display=swap');
+
+:root {
+  --gt-emerald: #10b981;
+  --gt-orange: #f97316;
+}
+
+body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  background: #0c0a09;
+  color: #e7e5e4;
+}
+
+/* Hide scrollbar */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
