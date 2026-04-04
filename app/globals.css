@@ -2,19 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;0,9..40,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400&display=swap');
 
 :root {
-  --gt-emerald: #10b981;
-  --gt-orange: #f97316;
+  --gt-bg: #FFFBF5;
+  --gt-card: #FFFFFF;
+  --gt-border: #F0E6D6;
+  --gt-text: #1A1612;
+  --gt-muted: #8C7E6E;
+  --gt-accent: #FF6B35;
+  --gt-accent2: #4A90D9;
+  --gt-success: #2EAD6B;
+  --gt-warning: #E8A838;
+  --gt-danger: #D94848;
 }
 
 body {
-  font-family: 'DM Sans', system-ui, sans-serif;
-  background: #0c0a09;
-  color: #e7e5e4;
+  font-family: 'Outfit', system-ui, sans-serif;
+  background-color: var(--gt-bg);
+  color: var(--gt-text);
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Hide scrollbar */
-.scrollbar-hide::-webkit-scrollbar { display: none; }
-.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+.font-display {
+  font-family: 'Fraunces', serif;
+}
+
+/* Smooth scrolling */
+html { scroll-behavior: smooth; }
+
+/* Remove number input arrows */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+input[type=number] { -moz-appearance: textfield; }
